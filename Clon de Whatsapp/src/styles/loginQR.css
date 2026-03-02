@@ -1,0 +1,134 @@
+/* FONDO CON PATRÓN WHATSAPP */
+.qr-container {
+  height: 100dvh;
+  width: 100%;
+  background: #111b21;
+  background-image: url("/images/wa-pattern.png");
+  background-size: 400px;
+  background-repeat: repeat;
+  color: #e9edef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  padding: 40px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* LADO IZQUIERDO */
+.qr-left {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.qr-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #e9edef;
+}
+
+.qr-steps {
+  color: #d1d7db;
+  line-height: 1.7;
+  font-size: 16px;
+  margin-bottom: 24px;
+  padding-left: 20px;
+}
+
+.qr-help {
+  color: #00a884;
+  font-size: 15px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.qr-help:hover {
+  text-decoration: underline;
+}
+
+/* LADO DERECHO */
+.qr-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CAJA DEL QR */
+.qr-box {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #d1d7db;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CONTENEDOR DEL QR */
+.qr-code-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* POSICIONAMIENTO RELATIVO PARA EL LOGO */
+.qr-wrapper-relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* LOGO SUPERPUESTO */
+.qr-logo {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+}
+
+/* BOTÓN "Iniciar sesión con número de teléfono" */
+.qr-phone-login {
+  margin-top: 20px;
+  background: none;
+  border: none;
+  color: #00a884;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.qr-phone-login:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .qr-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .qr-left {
+    max-width: 100%;
+  }
+
+  .qr-box {
+    width: 220px;
+    height: 220px;
+  }
+
+  .qr-logo {
+    width: 45px;
+    height: 45px;
+  }
+}
