@@ -89,4 +89,6 @@ npm run dev
 
 ---
 
+Actualizacion menos para forzar deploy.
+
 Fin del README.
